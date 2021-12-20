@@ -1,0 +1,13 @@
+{
+  "name": "jennie",
+  "version": "0.0.1",
+  "main": "index.js",
+  "author": "Omar Assadi <jennie@omarassadi.com> (https://omarassadi.com)",
+  "license": "ISC",
+  "devDependencies": {
+    "lerna": "^4.0.0"
+  },
+  "scripts": {
+    "precommit": "lint-staged"
+  }
+}

@@ -1,0 +1,60 @@
+env:
+  browser: true
+  es2021: true
+  node: true
+extends:
+  - eslint:recommended
+  - plugin:@typescript-eslint/recommended
+parser: '@typescript-eslint/parser'
+parserOptions:
+  ecmaFeatures:
+    jsx: true
+  ecmaVersion: 2021
+  sourceType: module
+plugins:
+  - '@typescript-eslint'
+rules:
+  indent:
+    - error
+    - 2
+  linebreak-style:
+    - error
+    - unix
+  quotes:
+    - error
+    - single
+  semi:
+    - error
+    - never
+  curly:
+    - error
+    - all
+  camelcase:
+    - error
+    - properties: always
+  yoda:
+    - error
+    - never
+  max-len:
+    - error
+    - code: 140
+      tabWidth: 2
+  eol-last:
+    - error
+    - "always"
+  array-element-newline:
+    - error
+    - "consistent"
+  array-bracket-newline:
+    - error
+    - "consistent"
+  array-bracket-spacing:
+    - error
+    - "never"
+  keyword-spacing:
+    - error
+    - before: true
+      after: true
+  no-extra-parens:
+    - error
+    - all
